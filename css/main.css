@@ -1,0 +1,249 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+html {
+  overflow-y: hidden;
+}
+
+html * {
+  text-align: justify;
+  text-justify: distribute;
+  list-style-type: none;
+}
+
+html iframe {
+  width: 50%;
+  height: 70%;
+}
+
+html p {
+  text-indent: 2rem;
+  margin: 0;
+}
+
+html h5 {
+  text-indent: 1rem;
+  margin: 0.3rem;
+  text-decoration: underline;
+}
+
+html h4 {
+  margin-top: 1rem;
+}
+
+html .endEmpty {
+  height: 5vh;
+}
+
+html body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+html body .topDark {
+  width: 100%;
+  height: 2rem;
+}
+
+html body .topDark .container {
+  display: table;
+  margin-left: 5vw;
+  width: 70vw;
+}
+
+html body .topDark .container .row .col {
+  margin-top: 0.2rem;
+}
+
+html body .topDark .badge {
+  width: 6rem;
+  color: aliceblue;
+  position: absolute;
+  top: 0.4rem;
+  right: 4vw;
+  width: 6rem;
+}
+
+html body .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+html body .menu a {
+  margin: auto;
+}
+
+html body .menu a img {
+  min-width: 100%;
+  height: 6rem;
+  padding: 0 0 0 1rem;
+  width: auto;
+}
+
+html body .menu .navbar {
+  width: 100%;
+}
+
+@media (min-width: 979px) {
+  html body .menu .navbar .collapse .navbar-nav li.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+html body .content {
+  height: 100%;
+}
+
+html body .content img {
+  border-radius: 30px;
+}
+
+html body .content .row .contentLeft {
+  height: 100%;
+}
+
+html body .content .row .contentLeft .list-group .list-group-item {
+  border: none;
+}
+
+html body .content .row .contentRight {
+  border-radius: 5px;
+  padding: 0rem 1.5rem 0 2rem;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+html body .content .row .contentRight a {
+  pointer-events: none;
+}
+
+html body .content .row .contentRight .ulContainer {
+  padding-right: 1rem;
+}
+
+html body .content .row .contentRight .ulContainer ul li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+html body .content .row .contentRight .ulContainer ul li h5, html body .content .row .contentRight .ulContainer ul li p {
+  display: inline;
+}
+
+html body .content .row .contentRight p {
+  padding-right: 1rem;
+}
+
+html body .content .row .contentRight .scrollspy-example {
+  position: relative;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 80vh;
+}
+
+html body .content .row .contentRight .scrollspy-example h4 {
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_img .floatLeftP {
+  width: 70vw;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_img .floatLeftP ul li {
+  padding: 0.3rem;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_img .floatRightImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_img .floatRightImg img {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding: 0.5rem;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_img .crewImg {
+  width: 15rem;
+  margin-right: 2rem;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_img #Tom {
+  width: 17vw;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_imgs .floatUpP {
+  margin-bottom: 1rem;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_imgs .floatDownImgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_imgs .floatDownImgs a {
+  margin: auto;
+  padding: 0.5rem;
+}
+
+html body .content .row .contentRight .scrollspy-example .text_imgs .floatDownImgs a img {
+  width: 100%;
+}
+
+html body .content .row .contentRight .pluginsRec a img, html body .content .row .contentRight .otherSites a img {
+  width: 50%;
+}
+
+html .modal-body .carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 300px;
+}
+
+html .modal-body .carousel .carousel-inner .carousel-item img {
+  height: 300px;
+}
+
+html .modal-body .carousel .carousel-inner .carousel-item #reptile {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.card {
+  margin-top: 2rem;
+  background-color: black;
+}
+
+.card .card-img-top {
+  background-color: black;
+  border-radius: 0;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=main.css.map */

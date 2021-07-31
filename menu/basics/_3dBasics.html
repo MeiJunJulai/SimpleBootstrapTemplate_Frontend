@@ -1,0 +1,92 @@
+<h4 id="list-item-1">
+    坐標系統
+</h4>
+<div class="text_img">
+    <p class="floatLeftP">
+        3D的概念建構在3D空間上。其中，坐標系統處理3D空間的所有位置。照慣例，坐標系統會採用右手定律：X軸指向右邊、Z軸指向畫面外、Y軸指向上方。
+        但Blender較不同，它的Z軸與圖中的Y軸對調。
+    </p>
+    <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Basic_theory" class="floatRightImg"
+        target="_blank">
+        <img src="../../imgs/basics/3d-coordinate-system.png" alt="3D Coordinate System" title="3D Coordinate System">
+    </a>
+</div>
+
+<h4 id="list-item-2">
+    物件
+</h4>
+<div class="text_img">
+    <p class="floatLeftP">
+        物件都是由頂點所建構呈現的。頂點在空間中會是一個具有其3D空間位置與其他額外資訊定義。每一項頂點都有這些屬性：
+        <br><br>
+        &nbsp 1.位置：它的X、Y、Z軸的識別。
+        <br>
+        &nbsp 2.顏色：它RGBA顏色屬性，範圍會從0.0到1.0。
+        <br>
+        &nbsp 3.法向：代表頂點面向的方向。
+        <br>
+        &nbsp 4.貼圖：頂點可以參考的2D圖片相對位置以讓它不僅是握有普通的RGBA顏色，而是呈現其在圖片相對位置的部分。
+        <!-- <ul>
+        <li>位置</li>
+        <li>顏色</li>
+        <li>法向</li>
+        <li>貼圖</li>
+    </ul> -->
+
+    </p>
+    <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Basic_theory" class="floatRightImg"
+        target="_blank">
+        <img src="../../imgs/basics/mdn-games-3d-cube.png" alt="">
+    </a>
+</div>
+
+<h4 id="list-item-3">
+    渲染流程
+</h4>
+<div class="text_img">
+    <p class="floatLeftP">
+        渲染流程是將畫面呈現到畫面上的流程。渲染流程會將從頂點建立成的模型物件，將它做頂點處理、柵格化、片段處理，再輸出畫面。
+    </p>
+    <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Basic_theory" class="floatRightImg"
+        target="_blank">
+        <img src="../../imgs/basics/3d-rendering-pipeline.png" alt="">
+    </a>
+</div>
+
+
+<h4 id="list-item-4">頂點處理</h4>
+<div class="text_img">
+    <p class="floatLeftP">
+        頂點處理關乎將頂點轉換成模型以及設定它們在3D空間上的坐標。
+    </p>
+    <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Basic_theory" class="floatRightImg"
+        target="_blank">
+        <img src="../../imgs/basics/mdn-games-3d-vertex-processing.png" alt="">
+    </a>
+</div>
+<div class="text_img">
+    <p class="floatLeftP">
+        這項流程總共分爲四個階段：第一階段會整理空間中的物件，又稱爲「模型轉換」。接着就是第二階段「視圖轉換」，會處理三維空間裡相機
+        的位置和旋轉設定。相機共有三個參數：位置、方向、旋轉。
+    </p>
+    <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Basic_theory" class="floatRightImg"
+        target="_blank">
+        <img src="../../imgs/basics/mdn-games-3d-camera.png" alt="">
+    </a>
+</div>
+<div class="text_img">
+    <p class="floatLeftP">
+        第三階段「投影轉換」（又稱透視轉換）會定義相機設定。它會決定相機所能看見的、以及所看到的空間感，如景深和縱橫比。
+        最後階段就是「視域轉換」，會將全部輸出並邁向渲染流程的階段。
+    </p>
+    <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Basic_theory" class="floatRightImg"
+        target="_blank">
+        <img src="../../imgs/basics/mdn-games-3d-camera-settings.png" alt="">
+    </a>
+</div>
+
+<p>參考資料：<a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Basic_theory" target="_blank">
+        <p>
+            https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Basic_theory
+        </p>
+    </a></p>

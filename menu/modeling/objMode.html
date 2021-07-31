@@ -1,0 +1,99 @@
+<!-- <span style="position:absolute;top:0px;left:0px;"><input type="button" value="Toggle Wireframe"
+        onclick="mesh.material.wireframe=!mesh.material.wireframe;meshFloor.material.wireframe=!meshFloor.material.wireframe;" />
+    <br />WASD
+    to move.<br />Arrow keys to turn.</span> -->
+<script type="text/javascript" src="./js/three.min.js"></script>
+
+<script type="text/javascript" src="./js/MTLLoader.js"></script>
+<script type="text/javascript" src="./js/OBJLoader.js"></script>
+
+<script type="text/javascript" src="./menu/modeling/demo.js"></script>
+
+<h4 id="list-item-1">物件模式簡介</h4>
+<p>
+    Blender的所有3D空間內可以編輯的存在，例如燈光、攝影機、3D模型等，都是物件（物件導向）。物件模式是每個物件的預設模式。
+    它會包含基礎的資料塊編輯，例如位置、旋轉、大小等；同時物件之間也可以有親子關係、可以設定親會影響子的資料。
+</p>
+<br>
+<div class="text_img">
+    <div class="floatLeftP">
+        <p>
+            Blender的剛開頭畫面只會預設有一個攝影機、一個方體模型、一個點光燈。
+        </p>
+        <p>
+            物件的新增、位移以及複製、刪除、連接的指令都會是在物件模式處理。可以把物件視為各種針對它在其它模式後會儲存入
+            它並再由物件模式決定最後統一調整的集合物。所有指令當中，物件模式的編輯會是屬於最上層的。
+        </p>
+    </div>
+    <a href="" class="floatRightImg">
+        <img src="../../imgs/modeling/ObjectModeGUI.png" class="">
+    </a>
+</div>
+
+<h4 id="list-item-2">新增物件</h4>
+<div class="text_img">
+    <div class="floatLeftP">
+        <p>
+            透過按下Shift + A即可新增Blender的預設物件。亦可透過按左上方的「add」按鈕達到同樣的效果。能選擇的物件類型
+            有普通三維面數的模型、曲線、骨架、文字等。
+        </p>
+    </div>
+    <a href="" class="floatRightImg">
+        <img src="../../imgs/modeling/AddObject.png" class="">
+    </a>
+</div>
+
+<h4 id="list-item-3">移動、旋轉、伸縮</h4>
+<div class="text_imgs">
+    <div class="floatUpP">
+        <p>
+            Blender的物件可以做基本的變形編輯，如移動、旋轉、縮放等。移動可透過按下G鍵、旋轉R鍵、縮放S鍵。
+        </p>
+    </div>
+    <div class="floatDownImgs">
+        <a href="" class="">
+            <img src="../../imgs/modeling/Grab.png" class="">
+        </a>
+        <a href="" class="">
+            <img src="../../imgs/modeling/Rotate.png" class="">
+        </a>
+        <a href="" class="">
+            <img src="../../imgs/modeling/Scale.png" class="">
+        </a>
+    </div>
+
+</div>
+
+<h4 id="list-item-4">複製物件</h4>
+<div class="text_img">
+    <div class="floatLeftP">
+        <p>
+            按Shift + D可以複製物件，物件雖複製，但它的像是貼圖等資料內容會連着。所以如果修改其中一個的連接着的資料，也會
+            修改到被複製後的物件的資料。但是這些資料也可以後續做複製分離。
+        </p>
+    </div>
+    <a href="" class="floatRightImg">
+        <img src="../../imgs/modeling/Duplicate.png" class="">
+    </a>
+</div>
+
+<h4 id="list-item-5">刪除物件</h4>
+<div class="text_img">
+    <div class="floatLeftP">
+        <p>
+            選取好物件後，再按下按下X鍵就可以選擇選擇是否刪除物件。這時會跳出確認鍵，只要按下Delete鍵即可刪除。
+        </p>
+    </div>
+    <a href="" class="floatRightImg">
+        <img src="../../imgs/modeling/Delete.png" class="">
+    </a>
+</div>
+
+<h4 id="list-item-6">顯示物件</h4>
+<div class="threedDModels">
+
+</div>
+<div class="endEmpty"></div>
+
+<script>init(true, false, false, true);</script>
+<!-- <button onclick="loadCanvas();">Test</button> -->

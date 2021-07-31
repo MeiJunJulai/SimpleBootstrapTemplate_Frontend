@@ -1,0 +1,225 @@
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+$topHeight: 5vh;
+$menuHeight: 20vh;
+$contentHeight: 75vh;
+
+$contentLeftWidth: 20%;
+$contentRightWidth: 100% - $contentLeftWidth;
+
+
+
+html{
+    *{
+        text-align:justify;
+        text-justify: distribute;
+        list-style-type: none;
+    }
+    iframe{
+        width:50%;
+        height:70%;
+    }
+    p{
+        text-indent:2rem;
+        margin:0;
+    }
+    h5{
+        text-indent:1rem;
+        margin:0.3rem;
+        text-decoration: underline;
+    }
+    h4{
+        margin-top: 1rem;
+    }
+    .endEmpty{
+        height:5vh;
+    }
+    overflow-y: hidden;
+    body{
+        font-family: 'Noto Sans TC', sans-serif;
+        .topDark{
+            width: 100%;
+            height: 2rem;
+            .container{
+                display:table;
+                margin-left:5vw;
+                width:70vw;
+                .row{
+                    .col{
+                        margin-top:0.2rem;
+                    }
+                }
+            }
+            .badge{
+                width: 6rem;
+                color:aliceblue;
+                position:absolute;
+                top:0.4rem;
+                right:4vw;
+                width: 6rem;
+            }
+        }
+        
+        .menu{
+            display:flex;
+            background-color:rgb(255, 255, 255);
+            a{
+                margin:auto;
+                img{
+                    min-width:100%;
+                    height:6rem;
+                    padding: 0 0 0 1rem;
+                    width: auto;
+                }
+            }
+            .navbar{
+                width:100%;
+                .collapse{
+                    .navbar-nav{
+                        @media (min-width: 979px) {
+                            li.dropdown:hover > .dropdown-menu {
+                                display: block;    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .content{
+            img{
+                border-radius: 30px;
+            }
+            height:100%;
+            .row{
+                .contentLeft{
+                    height: 100%;
+                    .list-group{
+                        .list-group-item{
+                            border:none;
+                        }
+                    }
+                }
+                .contentRight{
+                    a{
+                        pointer-events:none;
+                    }
+                    .ulContainer{
+                        padding-right: 1rem;
+                        ul{
+                            li{
+                                margin-top:0.5rem;
+                                margin-bottom:0.5rem;
+                                h5, p{
+                                    display:inline;
+                                }
+                            }
+                        }
+                    }
+                    p{
+                        padding-right: 1rem;
+                    }
+                    border-radius: 5px;
+
+                    padding: 0rem 1.5rem 0 2rem;
+                    height: 100%;
+                    background-color:rgb(241, 241, 241);
+                    .scrollspy-example{
+                        position: relative;
+                        overflow-y: scroll;
+                        scroll-behavior: smooth;
+                        height: 80vh;
+
+                        h4{
+                            padding-top:2rem;
+                            margin-bottom:1rem;
+                        }
+                        .text_img{
+                            display:flex;
+                            .floatLeftP{
+                                ul{
+                                    li{
+                                        padding:0.3rem;
+                                    }
+                                }
+                                width:70vw;
+                                // padding-top:1rem;
+                            }
+                            .floatRightImg{
+                                display:flex;
+                                flex-direction:column;
+                                img{
+                                    width:100%;
+                                    padding-left:1rem;
+                                    padding-right:1rem;
+                                    padding:0.5rem;
+                                }
+                            }
+                            .crewImg{
+                                width:15rem;
+                                margin-right:2rem;
+                            }
+                            #Tom{
+                                width:17vw;
+                            }
+                        }
+                        .text_imgs{
+                            display:flex;
+                            flex-direction:column;
+                            .floatUpP{
+                                margin-bottom: 1rem;
+                            }
+                            .floatDownImgs{
+                                a{
+                                    margin: auto;
+                                    padding: 0.5rem;
+                                    img{
+                                        width:100%;
+                                    }
+                                }
+                                display:flex;
+                            }
+                        }
+                    }
+                    .pluginsRec, .otherSites{
+                        a{
+                            img{
+                                width:50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal-body{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    width:100%;
+                    height:300px;
+                    img{
+                        height:300px;
+                    }
+                    #reptile{
+                        transform: scale(1.3);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.card{
+    margin-top: 2rem;
+    background-color: black;
+    .card-img-top{
+        background-color: black;
+        border-radius: 0;
+    }
+}
+.card:hover{
+    transform:scale(1.2);
+}
